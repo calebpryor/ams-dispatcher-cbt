@@ -188,3 +188,21 @@ You should see a webpage return that says `HELLO I AM FAKE AEM`
 In the log files you can see it fetching the content from the fake AEM instance.
 
 Celebrate your success you've installed and configured an AEM Dispatcher!
+
+## Clean up
+
+Now we just need to kill off our containers
+
+### Docker command
+
+```
+docker kill dispatcher
+docker kill aem
+```
+
+### Podman command
+
+```
+podman kill dispatcherr
+podman kill aem
+```
