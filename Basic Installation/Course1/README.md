@@ -31,4 +31,4 @@ Login to Docker Hub:
 podman login docker.io
 ```
 
-[ Proceed to Course 2 ](../Course2/README.md)
+[ Proceed to Course 2 ](../Course2/)
