@@ -4,4 +4,4 @@ AMS Basic Computer Based Training for AEM Dispatcher
 
 ## Basic Installation
 
-[ Instructions ](/basic-installation/)
+[ Instructions ](basic-installation/)
