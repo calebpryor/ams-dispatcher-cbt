@@ -4,12 +4,12 @@ AMS Basic Computer Based Training for AEM Dispatcher
 
 ## Course 1 - Requirements
 
-[ Instructions ](Course1/)
+[ Instructions ](course1/)
 
 ## Course 2 - Setup Fake AEM
 
-[ Instructions ](Course2/)
+[ Instructions ](course2/)
 
 ## Course 3 - Setup Real Dispatcher
 
-[ Instructions ](Course3/)
+[ Instructions ](course3/)

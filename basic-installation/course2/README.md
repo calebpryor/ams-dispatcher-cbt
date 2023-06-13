@@ -101,4 +101,4 @@ If you open your workstations web browser to:
 
 You should see a webpage return that says `HELLO I AM FAKE AEM`
 
-[ Proceed to Course 3 ](../Course3/)
+[ Proceed to Course 3 ](../course3/)
