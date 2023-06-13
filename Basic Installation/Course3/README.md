@@ -9,7 +9,7 @@ We want to start another basic linux container on workstation, so open a new ins
 ### Docker command
 
 ```
-docker run --rm -d -p 80:80 --name dispatcher rockylinux:8 tail -f /dev/null
+docker run --rm -d -p 8080:80 --name dispatcher rockylinux:8 tail -f /dev/null
 ```
 
 Log into the container so we can start our install
@@ -21,7 +21,7 @@ docker exec -it dispatcher /bin/bash
 ### Podman command
 
 ```
-podman run --rm -d -p 80:80 --name dispatcher rockylinux:8 tail -f /dev/null
+podman run --rm -d -p 8080:80 --name dispatcher rockylinux:8 tail -f /dev/null
 ```
 
 Log into the container so we can start our install
@@ -180,8 +180,8 @@ tail -f /var/log/httpd/*
 
 If you open your workstations web browser to:
 
-- http://127.0.0.1/content/hi.html
-- http://127.0.0.1/libs/granite/core/content/login.html
+- http://127.0.0.1:8080/content/hi.html
+- http://127.0.0.1:8080/libs/granite/core/content/login.html
 
 You should see a webpage return that says `HELLO I AM FAKE AEM`
 
