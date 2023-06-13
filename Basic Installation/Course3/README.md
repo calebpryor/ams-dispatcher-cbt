@@ -113,7 +113,7 @@ docker inspect $(docker ps | grep aem | awk '{ print $1 }') | grep IPAddress
 #### Podman command
 
 ```
-podman inspect $(docker ps | grep aem | awk '{ print $1 }') | grep IPAddress
+podman inspect $(podman ps | grep aem | awk '{ print $1 }') | grep IPAddress
 ```
 
 #### Farm File
