@@ -203,6 +203,6 @@ docker kill aem
 ### Podman command
 
 ```
-podman kill dispatcherr
+podman kill dispatcher
 podman kill aem
 ```
