@@ -12,6 +12,20 @@ We want to start another basic linux container on workstation, so open a new ins
 docker run --rm -d -p 8080:80 --name dispatcher rockylinux:8 tail -f /dev/null
 ```
 
+If the container started you'll see it running by running:
+
+```
+docker ps
+```
+
+You should see the container there like shown:
+
+```
+CONTAINER ID   IMAGE          COMMAND               CREATED         STATUS         PORTS                    NAMES
+2da65c028a36   rockylinux:8   "tail -f /dev/null"   2 seconds ago   Up 1 second    0.0.0.0:8080->80/tcp     dispatcher
+2f963c349821   rockylinux:8   "tail -f /dev/null"   8 seconds ago   Up 7 seconds   0.0.0.0:4503->4503/tcp   aem
+```
+
 Log into the container so we can start our install
 
 ```
@@ -22,6 +36,21 @@ docker exec -it dispatcher /bin/bash
 
 ```
 podman run --rm -d -p 8080:80 --name dispatcher rockylinux:8 tail -f /dev/null
+```
+
+
+If the container started you'll see it running by running:
+
+```
+podman ps
+```
+
+You should see the container there like shown:
+
+```
+CONTAINER ID  IMAGE                           COMMAND            CREATED       STATUS       PORTS                   NAMES
+baef6e8ed25d  docker.io/library/rockylinux:8  tail -f /dev/null  11 hours ago  Up 11 hours  0.0.0.0:4503->4503/tcp  aem
+170bf7660215  docker.io/library/rockylinux:8  tail -f /dev/null  11 hours ago  Up 11 hours  0.0.0.0:8080->80/tcp    dispatcher
 ```
 
 Log into the container so we can start our install
@@ -200,9 +229,21 @@ docker kill dispatcher
 docker kill aem
 ```
 
+You shouldn't see any containers running when you run:
+
+```
+docker ps
+```
+
 ### Podman command
 
 ```
 podman kill dispatcher
 podman kill aem
+```
+
+You shouldn't see any containers running when you run:
+
+```
+podman ps
 ```

@@ -12,6 +12,19 @@ We want to start a basic linux container on your workstation to play the role of
 docker run --rm -d -p 4503:4503 --name aem rockylinux:8 tail -f /dev/null
 ```
 
+If the container started you'll see it running by running:
+
+```
+docker ps
+```
+
+You should see the container there like shown:
+
+```
+CONTAINER ID   IMAGE          COMMAND               CREATED         STATUS         PORTS                    NAMES
+0d7991b56d85   rockylinux:8   "tail -f /dev/null"   3 seconds ago   Up 2 seconds   0.0.0.0:4503->4503/tcp   aem
+```
+
 Log into the container so we can start our install
 
 ```
@@ -22,6 +35,19 @@ docker exec -it aem /bin/bash
 
 ```
 podman run --rm -d -p 4503:4503 --name aem rockylinux:8 tail -f /dev/null
+```
+
+If the container started you'll see it running by running:
+
+```
+podman ps
+```
+
+You should see the container there like shown:
+
+```
+CONTAINER ID  IMAGE                           COMMAND            CREATED       STATUS       PORTS                   NAMES
+b55881f89bb5  docker.io/library/rockylinux:8  tail -f /dev/null  11 hours ago  Up 11 hours  0.0.0.0:4503->4503/tcp  aem
 ```
 
 Log into the container so we can start our install
