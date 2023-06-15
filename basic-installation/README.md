@@ -1,6 +1,6 @@
-# ams-dispatcher-cbt
+# Adobe Managed Services Basic Computer Based Training - Installing the Dispatcher
 
-AMS Basic Computer Based Training for AEM Dispatcher
+This course helps you get an idea of how to build out a very minimal basic Dispatcher server that would front your AEM server.
 
 ## Course 1 - Requirements
 
